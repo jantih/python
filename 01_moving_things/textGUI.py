@@ -21,6 +21,7 @@ class TextGUI:
         self.drawText(text, row)
         
     def updateGUI(self)-> None:
+        # Could do a list and keep appending but want to keep these organized according to text lenght / my own specific order
         self.printProjectInfo(0)
         self.updateFPS(1)
 
