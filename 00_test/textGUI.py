@@ -7,7 +7,7 @@ class TextGUI:
         self.font = pygame.font.SysFont('consolas', 16, False, False)
         self.clock = clock
 
-    def drawText(self, t, row) -> None:
+    def drawText(self, t: str, row: int) -> None:
         tr = t.get_rect()
         tr.move_ip(4, self.OFFSET+row*16)
         self.screen.blit(t, tr)
